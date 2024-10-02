@@ -1,0 +1,272 @@
+
+* {margin:0; padding:0;}
+.noto-sans {
+  font-family:"Noto Sans";
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{ scroll-behavior: smooth}
+
+body{ font-family: "Noto Sans";
+    background-color: #333;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+header { text-align: left; color:#FFFFFF;  background-color: #111111; height: 130px;
+        background-size: 100% 100%;
+}
+.logo {width: 160px; padding: 5px; padding-left: 120px
+}
+
+nav { height: 0; overflow: hidden; align-content: center}
+.responsive {height: 20vh; transition: all 0.7s; }
+
+
+
+
+
+
+
+.slider {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+	max-height: 100vh;
+	 z-index: 0;
+	overflow: hidden
+}
+
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border: none;
+  background-color: #db0080;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+	right: 10px
+}
+
+
+
+
+
+
+
+
+.fotoestudio {
+	width: 100%; 	
+	box-sizing: border-box;
+  	padding: 10px;
+		display: flex;
+  justify-content: center; 
+  align-items: center;    
+}
+h1 { text-align:left; color:#FFFFFF; margin: 20px; }
+h2 { text-align:left; color:#FFFFFF; margin: 20px; }
+.p1{text-align:center; 
+	color:#FFFFFF; 
+	font-family: "Noto Sans"; 
+	font-size: 20px; 
+	line-height: 1.9; 
+	margin: 20px;
+
+}
+.p2{text-align:justify; color:#FFFFFF; font-family: "Noto Sans"; font-size: 20px; line-height: 1.9; margin: 20px; }
+.p3{text-align:left; color:#FFFFFF; font-family: "Noto Sans"; font-size: 20px; line-height: 1; margin: 20px; }
+
+.fotoartistas {width: 100%; }
+nav ul {
+    list-style: none;
+    padding: 5;
+    margin: 5;
+	text-align: center;
+}
+nav ul li {
+    display: inline-block; 
+    margin-right: 10px;
+
+}
+nav ul li a {
+    color: #FFFFFF; 
+    border: 1px solid #111111;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+
+footer {
+  background-color: #111111;
+  color: #fff;
+  padding: 40px 0;
+  font-family: "Noto Sans";
+}
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+	flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin: 10px 0;
+}
+
+.footer-section a:focus {
+  outline: 2px solid #fff;
+}
+
+.footer-section a:visited {
+  color: #aaa;
+}
+
+.footer-section a:hover {
+  color: #ddd;
+}
+
+
+.anuncio{
+  width: 300px;
+  height: 600px;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.cajacontanuncio {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media(min-width:1024px){
+    nav {display: block; 
+		height: auto; 
+		padding-top: 5px;
+        width: 100%;}
+	
+	nav li {display: inline-block;}
+	
+	.icono {display: none;}
+	
+	.barrafija {
+    text-align: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #111111;
+	justify-content: space-between;
+    align-items: center;
+		height: 130px; 
+        background-size: 100% 100%;
+		   z-index: 10;
+
+	}
+	
+	
+	
+	.logo {width: 160px; padding: 5px; padding-left: 120px
+}
+	
+	.cajacontenedora {display: flex; flex-flow: wrap}
+	
+	.cajacontenedora div { 
+		width: 33.3%; 
+		padding: 20px; 
+		box-sizing: border-box}
+	
+	header {display: flex; 
+		align-items: center; 
+		justify-content: space-between;}
+
+	.slider {
+    width: 70%;
+    max-width: 800px;}
+	
+	.anuncio {
+    width: 728px x 90px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+	
+	
+}
+
+
+
+@media (max-width: 480px) {
+	.logo {width: 160px; padding: 5px; padding-left: 120px; padding-right: 100px;
+}
+	.icono {color: #FFFFFF;}
+	
+	
+	
+}
+
+
+
+
+
+
+	

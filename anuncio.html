@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+   <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      body {
+         font-family:"Noto Sans";
+        margin: 0;
+      }
+      .cajaanuncio h2 {
+        font-family:"Noto Sans";
+        font-weight: 800;
+        font-style: normal;
+        color: #db0080;
+        width: 40%;
+        font-size: 25px;
+        margin: 0;
+        padding: 5px;
+      }
+    .cajaanuncio {
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        background-color: #A2A2A2;
+        justify-content: space-around;
+      }
+      .logo img {
+        height: 80px;
+        margin: 5px;
+      }
+
+      .botonanuncio {
+        display: block;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #db0080;
+        text-decoration: none;
+        color: white;
+      }
+		
+	
+  @media (max-width: 727px) {
+        .cajaanuncio {
+          text-align: center;
+          height: 100vh;
+          align-content: center;
+        }
+        .cajaanuncio h2 {
+          font-family: "Noto Sans";
+          font-weight: 800;
+          font-style: normal;
+          color: #db0080;
+          width: 100%;
+          font-size: 35px;
+          margin: 0;
+          padding: 20px 10px;
+          box-sizing: border-box;
+        }
+        .logo img {
+          height: 120px;
+          margin: 5px;
+        }
+        .logo {
+          width: 100%;
+        }
+	  
+	  
+      }
+    </style>
+  </head>
+	
+  <body class="cajaanuncio">
+    <h2>CASA ESTUDIO</h2>
+      <a href="index.html" target="_blank" class="logo"><img src="Imágenes/logo.png" /></a>
+
+    <a href="index.html" target="_blank" class="botonanuncio"
+      >AGENDA YA TU CITA!
+    </a>
+
+  </body>
+</html>

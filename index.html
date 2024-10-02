@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Casa Estudio</title>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Estilos.css">
+</head> 
+
+<body>
+	<header>
+		<img src="Imágenes/logo.png" class="logo">
+		<a href="#" class="icono" onclick="MiFuncion();"> <i class="fa fa-bars"></i></a>
+		<nav id="navegador" class=" ">
+        <ul>
+          <li><a href="#elestudio">El Estudio</a></li>
+          <li><a href="#artistas">Artistas</a></li>
+			<li><a href="#reservas">Reservas</a></li>
+			<li><a href="#cuidados">Cuidados</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#pedíturno">Pedí Turno</a></li>
+        </ul>
+      </nav>
+	</header>
+
+	<main>
+		
+		
+		<div class="slider">
+        <div class="slides">
+          <img src="Imágenes/banner1.jpg"  alt="Slide 1" class= "slide1"/>
+       
+          <img src="Imágenes/banner2.jpg"  alt="Slide 2" class= "slide1"/>
+        
+          <img src="Imágenes/banner3.jpg"  alt="Slide 3" class= "slide1"/>
+        
+        
+          <img src="Imágenes/banner4.jpg"  alt="Slide 4" class= "slide1"/>
+        
+          <img src="Imágenes/banner5.jpg"  alt="Slide 5" class= "slide1"/>
+			
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+		
+		<script>
+			var slideIndex = 1;
+    showDivs(slideIndex);
+ 
+    function plusDivs(n) {
+    showDivs(slideIndex += n);
+    }
+ 
+    function showDivs(n) {
+        var i;
+ 
+        // acá define qué elemento entra en el slider
+        var x = document.getElementsByClassName("slide1");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+ 
+    carousel();
+ 
+    function carousel() {
+ 
+    var i;
+ 
+    var x = document.getElementsByClassName("slide1");
+ 
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+ 
+    slideIndex++;
+ 
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+ 
+    setTimeout(carousel, 2000); 
+ 
+    }
+  		</script>
+		
+		
+		
+    	<p class="p1">Un espacio cultural vibrante y acogedor. Nos especializamos en la creación de tatuajes personalizados, ofreciendo un ambiente en el que artistas y entusiastas del arte se conectan y comparten su pasión. Aquí, personas de todas partes del mundo se encuentran para explorar y celebrar la expresión artística a través de la tinta.</p>
+   
+	
+		
+	<section id="elestudio">
+		
+		<h1> Acerca de Casa Estudio</h1>
+		<img src="Imágenes/foto_estudio.jpg" class="fotoestudio">
+	<p class="p2"> Casa Estudio es un espacio cultural único dedicado al arte del tatuaje. Situado en Martínez, Buenos Aires, nuestro estudio se especializa en la creación de tatuajes personalizados que capturan la esencia y la individualidad de cada cliente. En Casa Estudio, fomentamos una comunidad vibrante donde personas de todo el mundo se unen para compartir su pasión por el arte de la tinta.
+
+Nuestro equipo de artistas talentosos está comprometido con la excelencia y la creatividad, ofreciendo una experiencia inolvidable desde la concepción del diseño hasta la ejecución final. Nos enorgullece ofrecer un ambiente acogedor y profesional, donde cada cliente puede explorar y expresar su identidad a través del arte del tatuaje.
+
+Ya sea que busques un diseño tradicional, contemporáneo o completamente original, en Casa Estudio encontrarás el espacio perfecto para transformar tu historia en una obra de arte permanente. </p>
+	
+	</section>
+	
+	
+	<section id="artistas">
+	
+		<h1>Artistas</h1>
+    <div class= "cajacontenedora">
+      <div>
+       	<img src="Imágenes/foto_manu.jpg" class="fotoartistas">
+		<h2>Manuel</h2>
+        <p class="p3">Co-fundador</p>
+      </div>
+		
+      <div>
+        <img src="Imágenes/foto_sab.jpg" class="fotoartistas">
+		<h2>Sabrina</h2>
+        <p class="p3">Co-fundadora</p>
+      </div>
+		
+      <div>
+       	<img src="Imágenes/foto_popi.jpg" class="fotoartistas">
+		<h2>Popi</h2>
+        <p class="p3">Residente</p>
+      </div>
+		
+	  <div>
+       	<img src="Imágenes/foto_belu.jpg" class="fotoartistas">
+		<h2>Belén</h2>
+        <p class="p3">Residente</p>
+      </div>
+		
+		<div>
+       	<img src="Imágenes/foto_natasha.jpg" class="fotoartistas">
+		<h2>Natasha</h2>
+        <p class="p3">Residente</p>
+      </div>
+    </div>
+	
+
+	</section>
+	
+	
+	<section id="reservas">
+	
+		<h1> Antes de Reservar</h1>
+		<p class="p2"> ¡Es muy probable que la mayoría de tus dudas ya hayan sido respondidas en nuestras preguntas frecuentes! Por favor, completa este formulario de la mejor manera posible, ya que esta es la información que usaremos para armar el presupuesto y programar la cita.</p>
+			
+        <p class="p2"> Te sugerimos que utilices una regla para medir el tamaño del tatuaje. Puedes colocar tu preferencia de artista, pero recuerda que es posible que el artista que elijas no esté disponible. Si no tienes preferencia, puedes dejarlo abierto a nuestra sugerencia. También te pedimos que adjuntes imágenes de referencias. Ten en cuenta que no hacemos copias de otros tatuajes; ¡Nuestras obras son todas originales y únicas! </p>
+			
+       <p class="p2"> Después de completar y enviar el formulario, nos comunicaremos contigo por correo en 3-5 días. Te llegará un precio estimado, y una sugerencia de día y horario. Si la cita sugerida no te sirve, avísanos e intentaremos encontrar otra opción que se ajuste a tu calendario.</p>
+	
+	</section>
+	
+	
+	<section id="cuidados">
+	
+		<h1> Guía de cuidados posteriores </h1>
+		<p class="p2"> Usamos Tegaderm, un adhesivo especialmente diseñado para la protección de tatuajes. Mantén el sticker puesto durante cuatro días y luego retíralo bajo la ducha con mucho cuidado. Lava tu tatuaje lentamente y sécalo con toallas de papel de cocina (¡no lo frotes!). </p>
+			
+        <p class="p2"> Después de lavar y secar tu tatuaje, usa una crema curativa para hidratarlo. Coloca una capa delgada cuatro veces al día la primera semana, luego tres veces la segunda semana, dos la tercera y una vez al día durante la cuarta semana. Siempre sugerimos usar una crema especialmente diseñada para tatuajes (no uses vaselina ni ninguna crema similar a Bepanthen), y ofrecemos la opción de comprarla en el Estudio! </p>
+			
+       <p class="p2"> Durante los primeros quince días evitar: deportes, duchas prolongadas, baños, saunas o natación. La picazón es parte del proceso, no te rasques. Evite la luz solar directa durante cuatro semanas. Puedes comenzar a usar protector solar después de un mes. Usa ropa holgada para que la piel respire. Y lo más importante... ¡Ama y disfruta tu tatuaje!</p>
+	
+	</section>
+	
+	
+	<section id="faq">
+	
+		<h1> FAQ </h1>
+	
+	</section>
+	
+	<section id="pediturno">
+	
+		<h1> Reservá tu turno cargando el formulario a continuación </h1>
+	
+	</section>
+		<div class="cajacontanuncio">
+
+   <iframe src="anuncio.html"  class= "anuncio" name="marco" frameborder="0" scrolling="no"></iframe>
+		</div>
+	</main>
+	
+	
+	
+	
+	<footer>
+  	<div class="footer-container">
+    <div class="footer-section">
+		
+		<h4>Contacto</h4>
+		
+		<nav>
+        <ul>
+         <li><a href="#elestudio">El Estudio</a></li>
+          <li><a href="#artistas">Artistas</a></li>
+			<li><a href="#reservas">Reservas</a></li>
+			<li><a href="#cuidados">Cuidados</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#pedíturno">Pedí Turno</a></li>
+        </ul>
+      </nav>
+		
+      
+      <p>Martínez, Buenos Aires</p>
+      <p>Email: contact@casa-estudio.com</p>
+    </div>
+		
+		
+    <div class="footer-section">
+      <h4>Seguinos</h4>
+      <a href="https://www.instagram.com/casaestudio_"> <p><i class="fa fa-instagram" aria-hidden="true"></i></p></a>
+    </div>
+    <div class="footer-section">
+      <p>© Casa Estudio - Todos los derechos reservados</p>
+    </div>
+  </div>
+	</footer>
+	
+	<script> 
+		function MiFuncion() {
+     	var x = document.getElementById("navegador");
+			if (x.className === " ") {
+			x.className += "responsive";
+     } else {
+       x.className = " ";
+     }
+   }
+	</script>
+	<script>
+		
+		window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 2) {
+            header.classList.add('barrafija');
+        } else {
+            header.classList.remove('barrafija');
+        }
+    });
+	</script>
+
+
+</body>
+</html>
